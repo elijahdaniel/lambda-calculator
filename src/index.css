@@ -1,12 +1,91 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2D2829;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  position: relative;
+  top: 110px;
+  width: 485px;
+  margin: 0 auto;
+  background: #BB1234;
+  height: 707px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.numContainer {
+  display: flex;
+}
+
+.displayBox {
+  background: #2D2829;
+  margin-top: 15px;
+  height: 60px;
+  border-radius: 50px;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.numbersBox button {
+  background: #113B78;
+  color: white;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  margin: 5px 10px;
+}
+
+.right {
+  margin-top: 18px;
+}
+
+.right button {
+  background: #2060B0;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  margin: 6px 10px;
+}
+
+.specialsBox button {
+  background: #2060B0;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.numbersBox button:nth-child(10) {
+  width: 180px;
+  border-radius: 40px;
+  margin-top: 10px;
+}
+
+button {
+  box-shadow: 0px 5px #2d2829;
+}
+
+button:focus {
+  border: none;
+  outline: none;
 }
